@@ -1,0 +1,3 @@
+C:/Users/kelse/projects/CSCI222/chatway/cmake-build-debug/CMakeFiles/chatway.dir
+C:/Users/kelse/projects/CSCI222/chatway/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kelse/projects/CSCI222/chatway/cmake-build-debug/CMakeFiles/rebuild_cache.dir

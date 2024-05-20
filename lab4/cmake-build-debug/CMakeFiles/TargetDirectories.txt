@@ -1,0 +1,3 @@
+C:/Users/kelse/projects/CSCI222/lab4/cmake-build-debug/CMakeFiles/lab4.dir
+C:/Users/kelse/projects/CSCI222/lab4/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kelse/projects/CSCI222/lab4/cmake-build-debug/CMakeFiles/rebuild_cache.dir
