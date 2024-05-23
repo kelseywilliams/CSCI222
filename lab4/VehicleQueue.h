@@ -1,3 +1,6 @@
+
+#ifndef LAB4_VEHICLEQUEUE_H
+#define LAB4_VEHICLEQUEUE_H
 #include <vector>
 #include <map>
 #include <string>
@@ -15,22 +18,19 @@
 #include <memory>
 #include "Vehicle.h"
 #include "Motorcycle.h"
+#include "Truck.h"
 #include "Road.h"
-#ifndef LAB4_VEHICLEQUEUE_H
-#define LAB4_VEHICLEQUEUE_H
-
 
 class VehicleQueue {
     std::vector<Vehicle*> vehicles;
     int random;
     int direction;
     Road* lane;
+    bool debug;
 public:
-    VehicleQueue(int rand, Road* lane);
+    VehicleQueue(int rand, Road* lane, bool debug);
     void pushNew();
     void cycle();
-    std::vector<Vehicle*> getVehicles();
-
 };
 
 

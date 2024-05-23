@@ -33,6 +33,7 @@ Place* Road::getStart(){
     return *this->places.begin();
 }
 Place* Road::getAt(int x){
+    if (x > LENGTH - 1 || x < 0) return nullptr;
     return this->places[x];
 }
 int Road::getLength(){

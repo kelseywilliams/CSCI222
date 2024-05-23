@@ -1,3 +1,7 @@
+
+#ifndef TRAFFICSIM_H
+#define TRAFFICSIM_H
+
 #include <vector>
 #include <map>
 #include <string>
@@ -13,19 +17,20 @@
 #include <tuple>
 #include "Road.h"
 #include "VehicleQueue.h"
-#ifndef TRAFFICSIM_H
-#define TRAFFICSIM_H
+#include "TrafficLight.h"
 
 class TrafficSim {
     int ticks;
     double rand;
     std::vector<Road*> lanes;
     std::vector<VehicleQueue*> queues;
+    bool debug = true;
+    TrafficLight* light;
 public:
-    TrafficSim();
+    TrafficSim(int ticks, int rand);
     void simulate();
     void print();
 };
 
 
-#endif //LAB4_TRAFFICSIM_H
+#endif

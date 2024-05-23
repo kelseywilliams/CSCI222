@@ -3,7 +3,7 @@
 #define LAB4_ROAD_H
 #define GRANULARITY 2
 #define LENGTH (GRANULARITY * 20)
-#define SPEED_LIMIT 2
+#define SPEED_LIMIT 1
 #include "Place.h"
 
 class Road {

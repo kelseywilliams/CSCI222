@@ -3,10 +3,13 @@
 //
 
 #include "Motorcycle.h"
-Motorcycle::Motorcycle(Road* lane, int direction): Motorcycle::Vehicle(lane, 4, direction){
+Motorcycle::Motorcycle(Road* lane, int direction): Motorcycle::Vehicle(lane, M_L, direction){
     this->lane = lane;
     this->direction = direction;
-    this->length = this->getLength();
+    this->setWeight(1);
+}
+Motorcycle::~Motorcycle(){
+    this->removeVehicle();
 }
 std::string Motorcycle::getChar() {
     return this->vChar;

@@ -32,14 +32,19 @@ class Place {
     bool open;
     friend class Road;
     friend class TrafficSim;
+    friend class TrafficLight;
+    int light;
 public:
     explicit Place();
     bool freeToMove(int direction);
     Place* next(int direction);
     bool isOpen();
-    void block();
+    void block(std::string c);
     void unblock();
     void setChar(std::string c);
+    int getLight();
+    void setLight(int color);
+    void toggleLight();
     std::string getChar();
 };
 

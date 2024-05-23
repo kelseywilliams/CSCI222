@@ -98,6 +98,20 @@ build CMakeFiles/lab4.dir/VehicleQueue.cpp.obj: CXX_COMPILER__lab4_unscanned_Deb
   OBJECT_DIR = CMakeFiles\lab4.dir
   OBJECT_FILE_DIR = CMakeFiles\lab4.dir
 
+build CMakeFiles/lab4.dir/Truck.cpp.obj: CXX_COMPILER__lab4_unscanned_Debug C$:/Users/kelse/projects/CSCI222/lab4/Truck.cpp || cmake_object_order_depends_target_lab4
+  DEP_FILE = CMakeFiles\lab4.dir\Truck.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kelse/projects/CSCI222/lab4/.
+  OBJECT_DIR = CMakeFiles\lab4.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab4.dir
+
+build CMakeFiles/lab4.dir/TrafficLight.cpp.obj: CXX_COMPILER__lab4_unscanned_Debug C$:/Users/kelse/projects/CSCI222/lab4/TrafficLight.cpp || cmake_object_order_depends_target_lab4
+  DEP_FILE = CMakeFiles\lab4.dir\TrafficLight.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/kelse/projects/CSCI222/lab4/.
+  OBJECT_DIR = CMakeFiles\lab4.dir
+  OBJECT_FILE_DIR = CMakeFiles\lab4.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target lab4
@@ -106,7 +120,7 @@ build CMakeFiles/lab4.dir/VehicleQueue.cpp.obj: CXX_COMPILER__lab4_unscanned_Deb
 #############################################
 # Link the executable lab4.exe
 
-build lab4.exe: CXX_EXECUTABLE_LINKER__lab4_Debug CMakeFiles/lab4.dir/TrafficSim.cpp.obj CMakeFiles/lab4.dir/Place.cpp.obj CMakeFiles/lab4.dir/Road.cpp.obj CMakeFiles/lab4.dir/main.cpp.obj CMakeFiles/lab4.dir/Vehicle.cpp.obj CMakeFiles/lab4.dir/Motorcycle.cpp.obj CMakeFiles/lab4.dir/VehicleQueue.cpp.obj
+build lab4.exe: CXX_EXECUTABLE_LINKER__lab4_Debug CMakeFiles/lab4.dir/TrafficSim.cpp.obj CMakeFiles/lab4.dir/Place.cpp.obj CMakeFiles/lab4.dir/Road.cpp.obj CMakeFiles/lab4.dir/main.cpp.obj CMakeFiles/lab4.dir/Vehicle.cpp.obj CMakeFiles/lab4.dir/Motorcycle.cpp.obj CMakeFiles/lab4.dir/VehicleQueue.cpp.obj CMakeFiles/lab4.dir/Truck.cpp.obj CMakeFiles/lab4.dir/TrafficLight.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\lab4.dir

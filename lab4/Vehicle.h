@@ -1,3 +1,9 @@
+
+
+#ifndef VEHICLE_H
+#define VEHICLE_H
+#define BUFF 4
+#include "Road.h"
 #include <vector>
 #include <map>
 #include <string>
@@ -14,11 +20,6 @@
 #include <list>
 #include <ctime>
 
-#ifndef VEHICLE_H
-#define VEHICLE_H
-#define BUFF 2
-#include "Road.h"
-
 class Vehicle {
     std::tuple<int, int> location;
     int length, speed, weight, direction, total_time, waiting_time, moving_time, distance;
@@ -29,16 +30,23 @@ class Vehicle {
     int id;
 public:
     Vehicle(Road* lane, int length, int direction);
+    virtual ~Vehicle() {};
     static int randgen(int start, int stop);
     int lookAhead();
-    void go();
+    int nextLight();
+    int go();
     void stop();
     int getX();
     int getSpeed();
     void gas();
     void brake();
     int getId();
+    void setLength(int length);
     int getLength();
+    void setWeight(int weight);
+    int getWeight();
+    void crash();
+    void removeVehicle();
     virtual void toString()  = 0;
     virtual std::string getChar() = 0;
 };

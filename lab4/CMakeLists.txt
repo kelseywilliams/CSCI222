@@ -16,4 +16,8 @@ add_executable(lab4
         Motorcycle.cpp
         Motorcycle.h
         VehicleQueue.cpp
-        VehicleQueue.h)
+        VehicleQueue.h
+        Truck.cpp
+        Truck.h
+        TrafficLight.cpp
+        TrafficLight.h)

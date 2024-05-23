@@ -8,6 +8,7 @@ Place::Place(){
     this->x = 0;
     this->open = true;
     this->vChar = " ";
+    this->light = 0;
 }
 bool Place::freeToMove(int direction){
     switch(direction){
@@ -41,17 +42,30 @@ Place* Place::next(int direction){
 bool Place::isOpen(){
     return this->open;
 }
-void Place::block(){
+void Place::block(std::string c){
+    this->setChar(c);
     this->open = false;
     if (this->lnk != nullptr) this->lnk->open = false;
 }
 void Place::unblock(){
+    this->setChar(" ");
     this->open = true;
     if (this->lnk != nullptr) this->lnk->open = true;
 }
+void Place::toggleLight(){
+    if (this->light >= 3) this->light = 1;
+    this->light++;
+}
+int Place::getLight(){
+    return this->light;
+}
+void Place::setLight(int color){
+    this->light = color;
+    if (this->lnk != nullptr) this->lnk->light = this->light;
+}
 void Place::setChar(std::string c){
-    if (this->lnk != nullptr) this->lnk->vChar = c;
     this->vChar = c;
+    if (this->lnk != nullptr) this->lnk->vChar = this->vChar;
 }
 std::string Place::getChar(){
     return this->vChar;
